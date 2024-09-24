@@ -31,17 +31,17 @@ audio.addEventListener('loadedmetadata', () => {
     {
       title: 'Brennan Savage',
       name:  'Look At Me Now',
-      image: '/assets/img/lemonade.png',
-      audio: '/assets/audio/brennan-savage-look-at-me-now-mp3.mp3',
-      backgroundImage: '/assets/img/lemonade.png',
+      image: 'assets/img/lemonade.png',
+      audio: 'assets/audio/brennan-savage-look-at-me-now-mp3.mp3',
+      backgroundImage: 'assets/img/lemonade.png',
 
     },
     {
       title: 'Masked Wolf',
       name:  'Astronaut in the ocean',
-      image: '/assets/img/astronaut.png',
-      audio: '/assets/audio/masked.mp3',
-      backgroundImage: '/assets/img/astronaut.png',
+      image: 'assets/img/astronaut.png',
+      audio: 'assets/audio/masked.mp3',
+      backgroundImage: 'assets/img/astronaut.png',
     },
   ];
     document.getElementById('right').addEventListener('click', nextSong);
@@ -51,14 +51,14 @@ audio.addEventListener('loadedmetadata', () => {
         const imagePlayPause = document.getElementById('play-pause');
         const mainImage = document.querySelector(".lemonade");
         const audio = document.getElementById('firtsSound');
-      if (imagePlayPause.src.endsWith('/assets/svg/play.png')) {
-        imagePlayPause.src = '/assets/svg/pause.png';
+      if (imagePlayPause.src.endsWith('assets/svg/play.png')) {
+        imagePlayPause.src = 'assets/svg/pause.png';
         mainImage.style.transform = "scale(1.02)";
         mainImage.style.borderRadius = "30px 30px 10px 10px";
         audio.play();
     
       } else {
-        imagePlayPause.src = '/assets/svg/play.png';
+        imagePlayPause.src = 'assets/svg/play.png';
         mainImage.style.transform = "scale(1)";
         mainImage.style.borderRadius = "30px 30px 0px 0px";
         audio.pause();
@@ -92,7 +92,7 @@ audio.addEventListener('loadedmetadata', () => {
   function playSong() {
     document.getElementById('firtsSound').play();
     const imagePlayPause = document.getElementById('play-pause');
-    imagePlayPause.src = '/assets/svg/pause.png';
+    imagePlayPause.src = 'assets/svg/pause.png';
     const mainImage = document.querySelector(".lemonade");
     mainImage.style.transform = "scale(1.02)";
   }
